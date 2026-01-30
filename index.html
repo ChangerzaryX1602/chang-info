@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชัชนันท์ ปัญญาประเสริฐกิจ | นักศึกษาวิศวกรรมคอมพิวเตอร์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .bg-gradient-animate {
+            background: linear-gradient(-45deg, #007AFF, #0051D5, #34C759, #00C7BE);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-animate">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        
+        <div class="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+            <div class="animate-fadeInUp">
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto rounded-full bg-white/20 backdrop-blur-lg flex items-center justify-center text-6xl mb-6">
+                        🐘
+                    </div>
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl font-black mb-6 drop-shadow-2xl tracking-tight">
+                    ชัชนันท์<br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-300 to-purple-300">
+                        ปัญญาประเสริฐกิจ
+                    </span>
+                </h1>
+                
+                <p class="text-2xl md:text-3xl mb-4 font-semibold">
+                    นักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 4
+                </p>
+                
+                <p class="text-xl md:text-2xl mb-12 text-blue-100">
+                    มหาวิทยาลัยขอนแก่น | จบ พ.ค. 2026
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#about" class="glass text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-all shadow-xl">
+                        เกี่ยวกับฉัน
+                    </a>
+                    <a href="#contact" class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all shadow-xl">
+                        ติดต่อ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-6xl font-black text-center mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+                เกี่ยวกับฉัน
+            </h2>
+            
+            <p class="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+                นักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในการพัฒนาซอฟต์แวร์และเทคโนโลยีใหม่ๆ<br/>
+                มีประสบการณ์ทำงานเสริมกับ 2 บริษัท พร้อมกับการเรียน
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Info Card -->
+                <div class="glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">📋 ข้อมูลพื้นฐาน</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">ชื่อเล่น:</span>
+                            <span class="text-gray-600">ช้าง</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">อีเมล:</span>
+                            <span class="text-gray-600">changnoi2547@gmail.com</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">สถานที่:</span>
+                            <span class="text-gray-600">ขอนแก่น</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">วันเกิด:</span>
+                            <span class="text-gray-600">16 กุมภาพันธ์</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">🎓 การศึกษา</h3>
+                    <div class="space-y-4 text-lg">
+                        <div>
+                            <p class="font-semibold text-gray-700">มหาวิทยาลัยขอนแก่น</p>
+                            <p class="text-gray-600">วิศวกรรมศาสตรบัณฑิต (วิศวกรรมคอมพิวเตอร์)</p>
+                            <p class="text-gray-500 text-base">ปีที่ 4 | จบ พฤษภาคม 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Card -->
+                <div class="glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">💼 ประสบการณ์ทำงาน</h3>
+                    <div class="space-y-4 text-lg">
+                        <div>
+                            <p class="font-semibold text-gray-700">งานเสริม 2 บริษัท</p>
+                            <p class="text-gray-600">ทำงานพาร์ทไทม์ควบคู่กับการเรียน</p>
+                            <p class="text-gray-500 text-base">ชีวิตยุ่งมาก แต่มันสนุกดี! 😄</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-6xl font-black text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
+                ทักษะ
+            </h2>
+            
+            <p class="text-center text-xl text-gray-600 mb-16">
+                เทคโนโลยีและทักษะที่ใช้ในการพัฒนา
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass rounded-2xl p-6 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">การพัฒนาเว็บ</h3>
+                    <p class="text-gray-600">HTML, CSS, JavaScript, React, Next.js, Tailwind CSS</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Backend</h3>
+                    <p class="text-gray-600">Node.js, Python, FastAPI, PostgreSQL, MongoDB</p>
+                </div>
+
+                <div class="glass rounded-2xl p-6 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">เครื่องมือ</h3>
+                    <p class="text-gray-600">Git, Docker, VS Code, Figma, Linux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-6xl font-black mb-6">ติดต่อ</h2>
+            <p class="text-2xl mb-12 text-blue-100">
+                สนใจติดต่อหรือคุยงาน? ยินดีรับฟังค่ะ!
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <a href="mailto:changnoi2547@gmail.com" class="glass text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white transition-all">
+                    📧 อีเมล
+                </a>
+                <a href="https://github.com/ChangerzaryX1602" target="_blank" class="glass text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white transition-all">
+                    💻 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-lg mb-2">© 2026 ชัชนันท์ ปัญญาประเสริฐกิจ</p>
+            <p class="text-sm">Made with 💙 in Khon Kaen</p>
+        </div>
+    </footer>
+
+</body>
+</html>
